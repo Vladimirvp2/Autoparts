@@ -1,0 +1,216 @@
+/*
+    Theme Name: Autoparts
+    Version: 1.0.0
+    Theme URI: 
+    Author: Vladimir Pishida
+    Description: This is a theme for Autoparts company	
+
+*/
+
+/*  ================================================  Comments list style  ===============================================    */
+
+
+.comments-title{
+	font-size: 200%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+ol.comment-list,
+ol.children
+{
+	list-style: none;
+}
+
+.comment-author{
+	float: left;
+}
+
+.comment-meta{
+	float: left;
+}
+
+.comment-wrap-info{
+	overflow: hidden;
+}
+
+img.avatar{
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+div.reply{
+	margin-bottom: 10px;
+}
+
+/*  Reply text */
+.reply a{
+	font-family: "OpenSansRegular", sans-serif; 
+	font-size: 100%;
+	color: #444;
+}
+
+/*  Add comment title */
+.comment-reply-title{
+	font-size: 200%;
+	text-align: center;
+}
+
+/*  Data text */
+.commentmetadata a{
+	font-family: "OpenSansLight", sans-serif; 
+	font-size: 100%;
+	color: #333;
+}
+
+/*  User name */
+.commentmetadata .fn {
+	font-family: "OpenSansRegular", sans-serif; 
+	font-size: 140%;
+	color: rgb(233,164,15);
+}
+
+
+/*  Comment message */
+.comment-body p{
+	font-family: "OpenSansRegular", sans-serif; 
+	font-size: 120%;
+	color: #333;
+}
+
+.comment-awaiting-moderation{
+	font-family: "OpenSansLight", sans-serif; 
+	font-size: 100%;
+	color: #333;
+}
+
+/*decrease commment indent for small devices */
+@media screen and (max-width : 767px){
+	ol.comment-list{
+		-webkit-padding-start: 10px;
+	}
+}
+
+
+
+/*  ================================================  Comments form  ===============================================    */
+.contact-form-container{
+	padding: 10px;
+}
+
+
+.contact-form-container .comments-wrapper label{
+	margin-bottom: 0px;
+}
+
+.commentPagination a.page-numbers {
+    display: inline-block;
+}
+
+.commentPagination  a.page-numbers,
+.commentPagination  span.page-numbers  {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+	border: 1px solid #ddd;
+}
+
+.commentPagination span.current {
+    background-color: rgb(233,164,15);
+    color: white;
+}
+
+.commentPagination a:hover:not(.active) {background-color: #ddd;}
+
+.commentPagination{
+	margin: 40px auto;	
+}
+
+.base-button{
+	background-color: rgb(233,164,15);
+	color: rgb(0,0,0);
+	font-size: 22px;
+	margin-left: 0px;
+}
+
+.base-button:hover{
+	background-color: rgb(233,164,15);
+	color: rgb(0,0,0);
+	opacity: 1;
+}
+
+.base-button:active{
+	box-shadow: none;
+}
+
+
+
+p.form-submit{
+	margin: 10px 10px 40px 0px;
+}
+
+.email-input{
+	padding-left: 5px;
+}
+
+.name-input{
+	padding-right: 5px;
+}
+
+/*  Set standart bootstrap padding between fields for small resolutions */
+@media screen and (max-width : 767px){
+	.email-input{
+		padding-left: 15px;
+	}
+	.name-input{
+		padding-right: 15px;
+	}	
+}
+
+
+/* Error messages */
+.form-control-msg{
+	display: none;
+}
+
+.has-error .form-control-msg{
+	display: block;
+}
+
+.js-form-submission, .js-form-success, .js-form-error, .js-field-error{
+	margin: 10px auto;
+	font-family: "OpenSansRegular", sans-serif; 
+	font-size: 85%;
+}
+
+.submit-button-wrapper{
+	text-align: center;
+}
+
+
+.forward-button-wrapper{
+	text-align: center;
+}
+
+
+.js-show-feedback{
+	display: block;
+}
+
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* can be set to any color*/
+    /*-webkit-text-fill-color: #333;*/
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; /* any delay can be set */
+}
